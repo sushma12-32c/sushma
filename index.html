@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="coder">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushma Derangula | Coder & Creative Video Creator</title>
+  <meta name="description" content="Portfolio of Sushma Derangula - 1st Year Undergrad at NST Hyderabad, Python Developer, Video Editor & Content Creator." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dynamic Mouse Glow Follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-monogram">SD</div>
+        <div class="brand-info">
+          <span class="brand-name">Sushma Derangula</span>
+          <span class="brand-role">NST Hyderabad '28</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#interactive-hub" class="nav-link">Interactive Studio</a></li>
+        <li><a href="#academics" class="nav-link">Academics</a></li>
+        <li><a href="#skills" class="nav-link">Arsenal</a></li>
+        <li><a href="#showcase" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Persona Switcher Toggle (Coder vs Creator) -->
+        <div class="mode-switcher-container" title="Switch Persona View">
+          <button class="mode-btn active" id="coderModeBtn" data-mode="coder">
+            <i class="fa-solid fa-code"></i>
+            <span class="mode-text">Coder</span>
+          </button>
+          <button class="mode-btn" id="creatorModeBtn" data-mode="creator">
+            <i class="fa-solid fa-film"></i>
+            <span class="mode-text">Creator</span>
+          </button>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-sm contact-nav-btn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-top-badge">
+            <span class="live-indicator"></span>
+            <span>1st Year Undergrad @ Newton School of Technology (NST)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-name">Sushma Derangula</span><br />
+            Bridging <span class="dynamic-word" id="dynamicWord">Python Code</span> &amp; <span class="gradient-creative">Cinematic Media</span>.
+          </h1>
+
+          <p class="hero-bio">
+            An ambitious 1st-year student at <strong>Newton School of Technology, Hyderabad</strong> with a high academic foundation 
+            (<span class="highlight-stat">96% in 12th</span> &amp; <span class="highlight-stat">86% in 10th CBSE</span>). 
+            I craft clean Python software while producing fast-paced, high-retention video content and digital stories.
+          </p>
+
+          <!-- Core Attribute Badges -->
+          <div class="hero-chips">
+            <div class="chip chip-python">
+              <i class="fa-brands fa-python"></i>
+              <span>Python Programmer</span>
+            </div>
+            <div class="chip chip-video">
+              <i class="fa-solid fa-clapperboard"></i>
+              <span>Video Editor</span>
+            </div>
+            <div class="chip chip-content">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>Content Creator</span>
+            </div>
+            <div class="chip chip-academic">
+              <i class="fa-solid fa-award"></i>
+              <span>96% Board Achiever</span>
+            </div>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-buttons">
+            <a href="#interactive-hub" class="btn btn-primary">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Open Interactive Studio</span>
+            </a>
+            <a href="#academics" class="btn btn-secondary">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>View Academic Record</span>
+            </a>
+          </div>
+
+          <!-- Hero Quick Stats Ribbon -->
+          <div class="hero-metrics-ribbon">
+            <div class="metric-block">
+              <span class="metric-val">96%</span>
+              <span class="metric-desc">12th Grade Merit</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-block">
+              <span class="metric-val">86%</span>
+              <span class="metric-desc">10th CBSE (Telangana)</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-block">
+              <span class="metric-val">NST</span>
+              <span class="metric-desc">Hyderabad Freshman</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-block">
+              <span class="metric-val">3+</span>
+              <span class="metric-desc">Core Disciplines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Dual Deck -->
+        <div class="hero-card-deck">
+          <div class="glass-device">
+            <!-- Window Bar -->
+            <div class="device-bar">
+              <div class="dots">
+                <span class="dot d-red"></span>
+                <span class="dot d-yellow"></span>
+                <span class="dot d-green"></span>
+              </div>
+              <div class="device-title" id="deviceTitle">sushma_profile.py</div>
+              <div class="device-status">ACTIVE</div>
+            </div>
+
+            <!-- Terminal / Code Body (Dynamic based on mode) -->
+            <div class="device-screen" id="deviceScreen">
+              <div class="code-view" id="codeView">
+                <div class="code-line"><span class="c-comment"># Sushma Derangula — Tech &amp; Creative Bio</span></div>
+                <div class="code-line"><span class="c-keyword">import</span> <span class="c-lib">creativity</span>, <span class="c-lib">logic</span></div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line"><span class="c-keyword">class</span> <span class="c-class">SushmaDerangula</span>:</div>
+                <div class="code-line">&nbsp;&nbsp;<span class="c-keyword">def</span> <span class="c-func">__init__</span>(<span class="c-var">self</span>):</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.college = <span class="c-str">"Newton School of Technology (NST), Hyd"</span></div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.year = <span class="c-str">"1st Year Undergrad"</span></div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.academics = {<span class="c-str">"class_12"</span>: <span class="c-num">96%</span>, <span class="c-str">"class_10"</span>: <span class="c-num">86%</span>}</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.stack = [<span class="c-str">"Python"</span>, <span class="c-str">"Premiere Pro"</span>, <span class="c-str">"Content Creation"</span>]</div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line">&nbsp;&nbsp;<span class="c-keyword">def</span> <span class="c-func">superpower</span>(<span class="c-var">self</span>):</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">return</span> <span class="c-str">"Writing algorithms by day, editing viral visuals by night."</span></div>
+              </div>
+            </div>
+
+            <!-- Live Interactive Audio / Wave Bar Strip -->
+            <div class="device-footer">
+              <div class="status-meta">
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>Status: Open for Python Projects &amp; Video Edits</span>
+              </div>
+              <button class="btn-micro" id="copySnippetBtn" title="Copy Info">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy Bio</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE FEATURE 1: Interactive Studio (Terminal + Video Timeline Editor) -->
+    <section id="interactive-hub" class="interactive-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> LIVE PLAYGROUND</span>
+          <h2 class="section-title">The Interactive Dual Studio</h2>
+          <p class="section-subtitle">
+            Experience both sides of Sushma's craft: test the live <strong>Python CLI</strong> or inspect the 
+            <strong>Video Editing Timeline</strong> simulation below.
+          </p>
+        </div>
+
+        <!-- Studio Hub Switcher -->
+        <div class="studio-tabs">
+          <button class="studio-tab active" id="tabTerminal" data-studio="terminal">
+            <i class="fa-solid fa-terminal"></i>
+            <span>Interactive Python Terminal</span>
+          </button>
+          <button class="studio-tab" id="tabEditor" data-studio="editor">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Premiere Timeline Simulator</span>
+          </button>
+        </div>
+
+        <!-- Playground 1: Live Interactive Python Terminal -->
+        <div class="studio-canvas active-canvas" id="canvasTerminal">
+          <div class="terminal-box">
+            <div class="terminal-top">
+              <div class="dots">
+                <span class="dot d-red"></span>
+                <span class="dot d-yellow"></span>
+                <span class="dot d-green"></span>
+              </div>
+              <span class="terminal-title">sushma@nst-hyderabad: ~ / python-env</span>
+              <span class="terminal-pill">Interactive</span>
+            </div>
+
+            <div class="terminal-body" id="terminalOutput">
+              <p class="t-line t-muted">Type commands or click quick actions below to explore Sushma's profile.</p>
+              <p class="t-line t-muted">Available: <span class="t-cyan">academics</span>, <span class="t-cyan">skills</span>, <span class="t-cyan">college</span>, <span class="t-cyan">video</span>, <span class="t-cyan">contact</span>, <span class="t-cyan">clear</span></p>
+              <p class="t-line t-prompt"><span>&gt;&gt;&gt;</span> <span class="t-cmd">python3 sushma_info.py --summary</span></p>
+              <div class="t-result">
+                🎓 <strong>Name:</strong> Sushma Derangula<br />
+                🏛️ <strong>Institute:</strong> Newton School of Technology (NST), Hyderabad (1st Year)<br />
+                🏆 <strong>Academic Distinction:</strong> 12th Grade: 96% | 10th CBSE: 86%<br />
+                🎬 <strong>Creative Focus:</strong> Video Editing, Retention Hooks, Visual Aesthetics<br />
+                🐍 <strong>Tech Focus:</strong> Python Programming, Logic, Automation
+              </div>
+            </div>
+
+            <!-- Terminal Interactive Input -->
+            <div class="terminal-input-bar">
+              <span class="prompt-symbol">&gt;&gt;&gt;</span>
+              <input type="text" id="terminalInput" placeholder="Type 'academics', 'skills', 'contact'..." autocomplete="off" />
+              <button class="btn-term-send" id="terminalSendBtn">
+                <i class="fa-solid fa-arrow-turn-down"></i>
+              </button>
+            </div>
+
+            <!-- Quick Action Command Chips -->
+            <div class="terminal-chips">
+              <span>Quick Commands:</span>
+              <button class="term-chip" data-cmd="academics">academics</button>
+              <button class="term-chip" data-cmd="skills">skills</button>
+              <button class="term-chip" data-cmd="college">college</button>
+              <button class="term-chip" data-cmd="video">video</button>
+              <button class="term-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playground 2: Video Editing Timeline Simulator -->
+        <div class="studio-canvas" id="canvasEditor">
+          <div class="editor-simulator">
+            <div class="editor-top-bar">
+              <div class="project-info">
+                <span class="p-badge">PR</span>
+                <span class="p-name">NST_Hyderabad_Vlog_FinalCut.prproj</span>
+              </div>
+              <div class="timecode" id="timecodeDisplay">00:00:14:22 / 00:00:45:00</div>
+              <div class="editor-controls">
+                <button class="ctrl-btn" id="rewindBtn" title="Restart"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="ctrl-btn play-active" id="playPauseBtn" title="Play/Pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="ctrl-btn" id="forwardBtn" title="Forward"><i class="fa-solid fa-forward-step"></i></button>
+              </div>
+            </div>
+
+            <div class="timeline-ruler">
+              <span>00:00</span><span>00:10</span><span>00:20</span><span>00:30</span><span>00:40</span><span>00:45</span>
+            </div>
+
+            <div class="timeline-tracks">
+              <!-- Video Track 2 -->
+              <div class="track-row">
+                <div class="track-label">V2 (B-Roll)</div>
+                <div class="track-content">
+                  <div class="clip clip-teal" style="left: 5%; width: 25%;">NST Campus Drone Shot</div>
+                  <div class="clip clip-teal" style="left: 45%; width: 30%;">Python Code Close-Up</div>
+                  <div class="clip clip-teal" style="left: 80%; width: 18%;">Call to Action Overlay</div>
+                </div>
+              </div>
+
+              <!-- Video Track 1 -->
+              <div class="track-row">
+                <div class="track-label">V1 (A-Roll)</div>
+                <div class="track-content">
+                  <div class="clip clip-indigo" style="left: 0%; width: 40%;">Talking Head: Intro &amp; Hook</div>
+                  <div class="clip clip-indigo" style="left: 42%; width: 35%;">Talking Head: 96% Journey</div>
+                  <div class="clip clip-indigo" style="left: 79%; width: 21%;">Outro &amp; Socials</div>
+                </div>
+              </div>
+
+              <!-- Audio Track 1 -->
+              <div class="track-row">
+                <div class="track-label">A1 (Voice)</div>
+                <div class="track-content">
+                  <div class="clip clip-amber" style="left: 0%; width: 100%;">
+                    <i class="fa-solid fa-microphone"></i> Clear Voiceover &amp; Noise Reduction (Enhanced)
+                  </div>
+                </div>
+              </div>
+
+              <!-- Audio Track 2 -->
+              <div class="track-row">
+                <div class="track-label">A2 (SFX/Music)</div>
+                <div class="track-content">
+                  <div class="clip clip-pink" style="left: 5%; width: 35%;"><i class="fa-solid fa-music"></i> Synthwave Beat (-14dB)</div>
+                  <div class="clip clip-pink" style="left: 42%; width: 10%;"><i class="fa-solid fa-bolt"></i> Whoosh SFX</div>
+                  <div class="clip clip-pink" style="left: 55%; width: 43%;"><i class="fa-solid fa-music"></i> High Energy Drop</div>
+                </div>
+              </div>
+
+              <!-- Playhead scrubber -->
+              <div class="playhead" id="playhead" style="left: 33%;"></div>
+            </div>
+
+            <div class="editor-footer-stats">
+              <span><i class="fa-solid fa-film"></i> 4K UHD 60fps</span>
+              <span><i class="fa-solid fa-palette"></i> Rec.709 Teal &amp; Orange LUT</span>
+              <span><i class="fa-solid fa-volume-high"></i> Stereo -14 LUFS (Normalized)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics & Distinctions (12th 96%, 10th 86%, NST 1st Yr) -->
+    <section id="academics" class="academics-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-tag"><i class="fa-solid fa-medal"></i> ACADEMIC EXCELLENCE</span>
+          <h2 class="section-title">Milestones &amp; Foundations</h2>
+          <p class="section-subtitle">
+            A testament to consistency, discipline, and high-standard academic achievements.
+          </p>
+        </div>
+
+        <div class="trophy-grid">
+          <!-- Card 1: 12th Grade 96% -->
+          <div class="trophy-card highlight-card">
+            <div class="trophy-glow"></div>
+            <div class="trophy-header">
+              <div class="trophy-badge gold-badge">
+                <i class="fa-solid fa-crown"></i>
+                <span>TOP TIER DISTINCTION</span>
+              </div>
+              <span class="trophy-year">Senior Secondary</span>
+            </div>
+
+            <div class="trophy-score-box">
+              <div class="score-dial">
+                <span class="huge-score">96%</span>
+                <span class="score-sub">Aggregate Score</span>
+              </div>
+              <div class="trophy-icon-wrap">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+            </div>
+
+            <h3 class="trophy-title">Class 12th Board Examination</h3>
+            <p class="trophy-desc">
+              Achieved an outstanding <strong>96%</strong> merit score, mastering Mathematics, Physics, 
+              and computational logical thinking with high precision and discipline.
+            </p>
+
+            <div class="trophy-tags">
+              <span class="t-tag">96% Aggregate</span>
+              <span class="t-tag">STEM Mastery</span>
+              <span class="t-tag">Merit Holder</span>
+            </div>
+          </div>
+
+          <!-- Card 2: 10th Grade CBSE 86% -->
+          <div class="trophy-card">
+            <div class="trophy-header">
+              <div class="trophy-badge cyan-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>CBSE BOARD TRACK</span>
+              </div>
+              <span class="trophy-year">Telangana State</span>
+            </div>
+
+            <div class="trophy-score-box">
+              <div class="score-dial">
+                <span class="huge-score cyan-txt">86%</span>
+                <span class="score-sub">10 CGPA Equivalent</span>
+              </div>
+              <div class="trophy-icon-wrap cyan-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+            </div>
+
+            <h3 class="trophy-title">Class 10th CBSE Examination</h3>
+            <p class="trophy-desc">
+              Completed the rigorous CBSE Class 10 curriculum in Telangana state with an impressive 
+              <strong>86%</strong> aggregate, establishing strong scientific and analytical foundations.
+            </p>
+
+            <div class="trophy-tags">
+              <span class="t-tag">CBSE Curriculum</span>
+              <span class="t-tag">86% Aggregate</span>
+              <span class="t-tag">Core Foundation</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Newton School of Technology -->
+          <div class="trophy-card">
+            <div class="trophy-header">
+              <div class="trophy-badge purple-badge">
+                <i class="fa-solid fa-rocket"></i>
+                <span>UNDERGRADUATE</span>
+              </div>
+              <span class="trophy-year">2024 - Present</span>
+            </div>
+
+            <div class="trophy-score-box">
+              <div class="score-dial">
+                <span class="huge-score purple-txt">NST</span>
+                <span class="score-sub">1st Year Student</span>
+              </div>
+              <div class="trophy-icon-wrap purple-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+            </div>
+
+            <h3 class="trophy-title">Newton School of Technology (NST)</h3>
+            <p class="trophy-desc">
+              Pursuing modern Computer Science and Emerging Technologies in Hyderabad. 
+              Actively diving into Python engineering, software systems, and creator collaborations.
+            </p>
+
+            <div class="trophy-tags">
+              <span class="t-tag">Hyderabad Campus</span>
+              <span class="t-tag">Python &amp; Tech</span>
+              <span class="t-tag">CS Undergrad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Arsenal -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-tag"><i class="fa-solid fa-cubes"></i> TECHNICAL &amp; CREATIVE ARSENAL</span>
+          <h2 class="section-title">The Multi-Disciplinary Stack</h2>
+          <p class="section-subtitle">
+            Engineered logic meets high-end digital media production.
+          </p>
+        </div>
+
+        <div class="arsenal-grid">
+          <!-- Stack 1: Python & Programming -->
+          <div class="arsenal-box">
+            <div class="arsenal-head">
+              <div class="box-symbol sym-python"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h3>Python Programming</h3>
+                <p>Logic, algorithms, scripts &amp; tools</p>
+              </div>
+            </div>
+
+            <div class="meter-group">
+              <div class="meter-item">
+                <div class="meter-info"><span>Python 3.x Syntax &amp; OOP</span><span>88%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-cyan" style="width: 88%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Problem Solving &amp; Logic</span><span>85%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-cyan" style="width: 85%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Automation &amp; Data Handling</span><span>80%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-cyan" style="width: 80%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>VS Code</span>
+              <span>Python Modules</span>
+              <span>Algorithms</span>
+              <span>Git &amp; GitHub</span>
+            </div>
+          </div>
+
+          <!-- Stack 2: Video Editing Suite -->
+          <div class="arsenal-box">
+            <div class="arsenal-head">
+              <div class="box-symbol sym-video"><i class="fa-solid fa-film"></i></div>
+              <div>
+                <h3>Video Editing Suite</h3>
+                <p>Pacing, color grading &amp; retention</p>
+              </div>
+            </div>
+
+            <div class="meter-group">
+              <div class="meter-item">
+                <div class="meter-info"><span>Fast-Paced Dynamic Cuts</span><span>92%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-pink" style="width: 92%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Audio Design &amp; SFX Pacing</span><span>86%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-pink" style="width: 86%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Color Correction &amp; Grading</span><span>82%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-pink" style="width: 82%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>Premiere Pro</span>
+              <span>CapCut Pro</span>
+              <span>DaVinci Resolve</span>
+              <span>After Effects</span>
+            </div>
+          </div>
+
+          <!-- Stack 3: Content Creation & Media -->
+          <div class="arsenal-box">
+            <div class="arsenal-head">
+              <div class="box-symbol sym-content"><i class="fa-solid fa-sparkles"></i></div>
+              <div>
+                <h3>Content Creation</h3>
+                <p>Storytelling, virality &amp; distribution</p>
+              </div>
+            </div>
+
+            <div class="meter-group">
+              <div class="meter-item">
+                <div class="meter-info"><span>Short-Form Retention Hooks</span><span>90%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-amber" style="width: 90%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Visual Storyboarding</span><span>88%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-amber" style="width: 88%;"></div></div>
+              </div>
+              <div class="meter-item">
+                <div class="meter-info"><span>Thumbnail &amp; Graphic Aesthetics</span><span>84%</span></div>
+                <div class="bar-bg"><div class="bar-fill fill-amber" style="width: 84%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>Instagram Reels</span>
+              <span>YouTube Shorts</span>
+              <span>Canva</span>
+              <span>Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Showcase Section -->
+    <section id="showcase" class="showcase-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-tag"><i class="fa-solid fa-folder-open"></i> PORTFOLIO GALLERY</span>
+          <h2 class="section-title">Featured Projects &amp; Creations</h2>
+          <p class="section-subtitle">
+            Explore works across Python programming, creative video editing, and digital media.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar">
+          <button class="filter-pill active" data-filter="all">All Projects</button>
+          <button class="filter-pill" data-filter="python"><i class="fa-brands fa-python"></i> Python &amp; Code</button>
+          <button class="filter-pill" data-filter="video"><i class="fa-solid fa-clapperboard"></i> Video Editing</button>
+          <button class="filter-pill" data-filter="content"><i class="fa-solid fa-bullhorn"></i> Content Creation</button>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Card 1: Python Automation -->
+          <div class="showcase-card" data-category="python">
+            <div class="showcase-preview preview-code">
+              <i class="fa-solid fa-file-code"></i>
+              <span class="category-chip">Python Script</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Automation • Productivity</span>
+              <h3>Media Asset &amp; Footage Sorter</h3>
+              <p>A Python utility to automatically sort camera rolls, parse metadata, and organize video files into editor-friendly directories.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Python 3</span><span>OS Engine</span></div>
+                <button class="btn-preview-modal" onclick="alert('Python Script: Features automated subfolder creation, EXIF metadata extraction, and batch renaming!')">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: High Retention Reel -->
+          <div class="showcase-card" data-category="video">
+            <div class="showcase-preview preview-video">
+              <i class="fa-solid fa-play"></i>
+              <span class="category-chip">Video Edit</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Short Form • Motion</span>
+              <h3>High-Retention Tech Reel</h3>
+              <p>Fast-paced 45-second edit with seamless sound effects, kinetic subtitle typography, and punch-in speed ramps explaining code.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Premiere Pro</span><span>SFX</span></div>
+                <button class="btn-preview-modal" onclick="alert('Video Showcase: Mastered in Premiere Pro with customized LUTs and -14 LUFS sound balance.')">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: NST Student Life Vlog -->
+          <div class="showcase-card" data-category="content">
+            <div class="showcase-preview preview-content">
+              <i class="fa-solid fa-video"></i>
+              <span class="category-chip">Content Series</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Storytelling • Vlog</span>
+              <h3>Life @ Newton School of Tech</h3>
+              <p>Documenting the freshman journey at NST Hyderabad, from hackathons to late-night coding sessions, built to inspire peers.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Vlogging</span><span>Storyboarding</span></div>
+                <button class="btn-preview-modal" onclick="alert('Content Creation: Storyboarded hook-first with high engagement retention pacing!')">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Python Academic Analyzer -->
+          <div class="showcase-card" data-category="python">
+            <div class="showcase-preview preview-code-alt">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="category-chip">Python Logic</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Academic Tool • CLI</span>
+              <h3>Board &amp; CGPA Performance Engine</h3>
+              <p>Interactive Python analyzer calculating percentage-to-CGPA conversions, subject weightages, and score projections.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Pure Python</span><span>Math Logic</span></div>
+                <button class="btn-preview-modal" onclick="alert('Python Tool: Built with clean modular functions and CLI interactive menus.')">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Cinematic Video Edit -->
+          <div class="showcase-card" data-category="video">
+            <div class="showcase-preview preview-video-alt">
+              <i class="fa-solid fa-film"></i>
+              <span class="category-chip">Color Grade</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Cinematics • Color Grading</span>
+              <h3>Hyderabad City Beat-Sync Reel</h3>
+              <p>Cinematic montage capturing the city of pearls and IT corridor with custom teal-and-orange grades and rhythmic beat transitions.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Color Grading</span><span>Beat Sync</span></div>
+                <button class="btn-preview-modal" onclick="alert('Cinematic Edit: Features custom curve grading, mask transitions, and spatial audio.')">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Educational Content -->
+          <div class="showcase-card" data-category="content">
+            <div class="showcase-preview preview-content-alt">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span class="category-chip">EdTech</span>
+            </div>
+            <div class="showcase-body">
+              <span class="showcase-type">Infographics • Social</span>
+              <h3>Python Snippets for Beginners</h3>
+              <p>Carousel guides breaking down loops, functions, and list comprehensions into visually aesthetic slides for aspiring programmers.</p>
+              <div class="showcase-footer">
+                <div class="tags-row"><span>Visual Learning</span><span>Graphic Design</span></div>
+                <button class="btn-preview-modal" onclick="alert('Educational Series: Crafted for Instagram and LinkedIn with high-clarity diagrams.')">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-glass-card">
+          <div class="contact-left">
+            <span class="badge-tag"><i class="fa-solid fa-paper-plane"></i> COLLABORATE</span>
+            <h2 class="contact-heading">Let's Create Together</h2>
+            <p class="contact-sub">
+              Whether you need slick, high-retention video editing, a collaborative Python project, 
+              or want to brainstorm content, feel free to reach out!
+            </p>
+
+            <div class="info-list">
+              <div class="info-point">
+                <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+                <div>
+                  <span class="info-label">Name</span>
+                  <span class="info-val">Sushma Derangula</span>
+                </div>
+              </div>
+
+              <div class="info-point">
+                <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                  <span class="info-label">College</span>
+                  <span class="info-val">Newton School of Technology (NST), Hyderabad</span>
+                </div>
+              </div>
+
+              <div class="info-point">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-val">Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Copy Email Button -->
+            <div class="quick-copy-box">
+              <span class="qc-email">sushma.derangula@nst.edu.in</span>
+              <button class="btn-copy-email" id="copyEmailBtn">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copyBtnText">Copy Email</span>
+              </button>
+            </div>
+
+            <div class="socials-cluster">
+              <a href="#" class="social-circle" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-circle" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-circle" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-circle" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="glass-form" id="contactForm">
+              <h3>Send a Message</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="userName">Your Name</label>
+                  <input type="text" id="userName" placeholder="e.g. Alex Smith" required />
+                </div>
+                <div class="form-field">
+                  <label for="userEmail">Your Email</label>
+                  <input type="email" id="userEmail" placeholder="alex@domain.com" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="projectType">Purpose</label>
+                <select id="projectType">
+                  <option value="video">Video Editing Project (Reels / YouTube)</option>
+                  <option value="python">Python / Software Collaboration</option>
+                  <option value="content">Content Strategy &amp; Social Media</option>
+                  <option value="networking">General Student &amp; Tech Networking</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="userMessage">Message</label>
+                <textarea id="userMessage" rows="4" placeholder="Tell me about your vision or idea..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message to Sushma</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-brand">
+        <div class="brand-monogram sm">SD</div>
+        <span><strong>Sushma Derangula</strong> • NST Hyderabad 1st Year Undergrad</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-popup" id="toastPopup">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script>
+    // 1. Mouse Follower Glow
+    const cursorGlow = document.getElementById('cursorGlow');
+    window.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = `${e.clientX}px`;
+      cursorGlow.style.top = `${e.clientY}px`;
+    });
+
+    // 2. Persona Mode Switcher (Coder vs Creator)
+    const coderModeBtn = document.getElementById('coderModeBtn');
+    const creatorModeBtn = document.getElementById('creatorModeBtn');
+    const dynamicWord = document.getElementById('dynamicWord');
+    const deviceTitle = document.getElementById('deviceTitle');
+
+    coderModeBtn.addEventListener('click', () => {
+      document.documentElement.setAttribute('data-mode', 'coder');
+      coderModeBtn.classList.add('active');
+      creatorModeBtn.classList.remove('active');
+      dynamicWord.textContent = 'Python Code';
+      deviceTitle.textContent = 'sushma_profile.py';
+      showToast('Switched to Coder Mode ⚡');
+    });
+
+    creatorModeBtn.addEventListener('click', () => {
+      document.documentElement.setAttribute('data-mode', 'creator');
+      creatorModeBtn.classList.add('active');
+      coderModeBtn.classList.remove('active');
+      dynamicWord.textContent = 'Creative Storytelling';
+      deviceTitle.textContent = 'timeline_render.prproj';
+      showToast('Switched to Creator Mode 🎬');
+    });
+
+    // 3. Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+    });
+
+    // 4. Interactive Studio Switcher (Terminal vs Editor)
+    const tabTerminal = document.getElementById('tabTerminal');
+    const tabEditor = document.getElementById('tabEditor');
+    const canvasTerminal = document.getElementById('canvasTerminal');
+    const canvasEditor = document.getElementById('canvasEditor');
+
+    tabTerminal.addEventListener('click', () => {
+      tabTerminal.classList.add('active');
+      tabEditor.classList.remove('active');
+      canvasTerminal.classList.add('active-canvas');
+      canvasEditor.classList.remove('active-canvas');
+    });
+
+    tabEditor.addEventListener('click', () => {
+      tabEditor.classList.add('active');
+      tabTerminal.classList.remove('active');
+      canvasEditor.classList.add('active-canvas');
+      canvasTerminal.classList.remove('active-canvas');
+    });
+
+    // 5. Interactive Python Terminal Logic
+    const terminalInput = document.getElementById('terminalInput');
+    const terminalOutput = document.getElementById('terminalOutput');
+    const terminalSendBtn = document.getElementById('terminalSendBtn');
+    const termChips = document.querySelectorAll('.term-chip');
+
+    const terminalCommands = {
+      academics: '🏆 <strong>Class 12:</strong> 96% Merit Distinction<br />📚 <strong>Class 10 CBSE:</strong> 86% (Telangana State)<br />🏛️ <strong>Newton School of Technology:</strong> 1st Year Undergraduate in CS & AI',
+      skills: '🐍 <strong>Python:</strong> Automation, Logic, Problem Solving<br />🎬 <strong>Video Editing:</strong> Premiere Pro, After Effects, CapCut Pro, DaVinci<br />📱 <strong>Content Creation:</strong> High-Retention Shorts, Storyboarding, Thumbnails',
+      college: '🏛️ <strong>College:</strong> Newton School of Technology (NST), Hyderabad<br />📍 <strong>Location:</strong> Hyderabad, Telangana<br />🚀 <strong>Year:</strong> 1st Year CS Undergraduate',
+      video: '🎬 <strong>Editing Arsenal:</strong> Premiere Pro, Dynamic Speed Ramping, Keyframe Animations, Sound Design (-14 LUFS), Cinematic LUTs',
+      contact: '📬 <strong>Email:</strong> sushma.derangula@nst.edu.in<br />📍 <strong>City:</strong> Hyderabad, Telangana<br />🤝 Open for collaborations & freelance edits!'
+    };
+
+    function handleTerminalCommand(cmd) {
+      const cleanCmd = cmd.trim().toLowerCase();
+      if (!cleanCmd) return;
+
+      const pUser = document.createElement('p');
+      pUser.className = 't-line t-prompt';
+      pUser.innerHTML = `<span>&gt;&gt;&gt;</span> <span class="t-cmd">${cleanCmd}</span>`;
+      terminalOutput.appendChild(pUser);
+
+      const pResponse = document.createElement('div');
+      pResponse.className = 't-result';
+
+      if (cleanCmd === 'clear') {
+        terminalOutput.innerHTML = '<p class="t-line t-muted">Terminal cleared. Type commands or click buttons below.</p>';
+        terminalInput.value = '';
+        return;
+      } else if (terminalCommands[cleanCmd]) {
+        pResponse.innerHTML = terminalCommands[cleanCmd];
+      } else {
+        pResponse.innerHTML = `<span style="color: #ef4444;">Command not recognized: '${cleanCmd}'</span>. Try: academics, skills, college, video, contact, clear.`;
+      }
+
+      terminalOutput.appendChild(pResponse);
+      terminalOutput.scrollTop = terminalOutput.scrollHeight;
+      terminalInput.value = '';
+    }
+
+    terminalSendBtn.addEventListener('click', () => handleTerminalCommand(terminalInput.value));
+    terminalInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleTerminalCommand(terminalInput.value);
+    });
+
+    termChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const cmd = chip.getAttribute('data-cmd');
+        handleTerminalCommand(cmd);
+      });
+    });
+
+    // 6. Video Editor Play/Pause Animation
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playhead = document.getElementById('playhead');
+    const timecodeDisplay = document.getElementById('timecodeDisplay');
+    let isPlaying = true;
+    let playheadPos = 33;
+    let playheadInterval = null;
+
+    function startScrubber() {
+      playheadInterval = setInterval(() => {
+        if (!isPlaying) return;
+        playheadPos += 0.5;
+        if (playheadPos > 98) playheadPos = 2;
+        playhead.style.left = `${playheadPos}%`;
+        const seconds = Math.floor((playheadPos / 100) * 45);
+        timecodeDisplay.textContent = `00:00:${seconds < 10 ? '0' + seconds : seconds}:18 / 00:00:45:00`;
+      }, 100);
+    }
+    startScrubber();
+
+    playPauseBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      playPauseBtn.innerHTML = isPlaying ? '<i class="fa-solid fa-pause"></i>' : '<i class="fa-solid fa-play"></i>';
+    });
+
+    document.getElementById('rewindBtn').addEventListener('click', () => {
+      playheadPos = 2;
+      playhead.style.left = '2%';
+    });
+
+    // 7. Project Filter Buttons
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const showcaseCards = document.querySelectorAll('.showcase-card');
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const filterVal = pill.getAttribute('data-filter');
+
+        showcaseCards.forEach(card => {
+          if (filterVal === 'all' || card.getAttribute('data-category') === filterVal) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 8. Copy Email / Bio & Toast Function
+    function showToast(message) {
+      const toast = document.getElementById('toastPopup');
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    if (copyEmailBtn) {
+      copyEmailBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText('sushma.derangula@nst.edu.in');
+        showToast('Email copied to clipboard!');
+      });
+    }
+
+    const copySnippetBtn = document.getElementById('copySnippetBtn');
+    if (copySnippetBtn) {
+      copySnippetBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText('Sushma Derangula | 1st Year @ NST Hyderabad | Python Coder, Video Editor & Content Creator | 12th: 96% | 10th CBSE: 86%');
+        showToast('Profile bio copied!');
+      });
+    }
+
+    // 9. Contact Form Feedback
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Thank you, Sushma received your message!');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
